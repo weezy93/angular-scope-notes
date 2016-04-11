@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Directives Scope</title>
+</head>
+  <body>
+    <div ng-app="myApp">
+      <div data-ng-controller="myController">
+        CONTROLLER val: <span>{{val}}</span>
+        <br><br><hr>
+        Directive with shared scope: <span shared-scope>{{val}}</span>
+        <br><br>
+        Directive with inherited scope: <span inherited-scope>{{val}}</span>
+        <br><br>
+        Directive with isolated scope: <span isolated-scope>{{val}}</span>
+        <br><br>
+        Directive with isolated scope (take two): <span isolated-scope-take-two val="val">{{val}}</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
